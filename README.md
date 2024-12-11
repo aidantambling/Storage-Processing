@@ -21,10 +21,13 @@ The database is implemented in Python. It is a key-value database centered on tr
    ```
 2. Run the script
    ```bash
-   python inmemory_db.py
+   python db.py
    ```
-3. Test the code
-   There is a sample test case used in the main function of inmemory_db.py:
+   This will run the sample output contained in db.py's main function.
+3. Modify + test the code
+
+   
+   There is a sample test case used in the main function of db.py:
    ```bash
     db = InMemoryDB()
 
@@ -60,6 +63,8 @@ The database is implemented in Python. It is a key-value database centered on tr
     db.rollback()
     print(db.get("B")) # Null
     ```
+
+   This can be modified at-will to test the required functions and ensure proper operation.
 
 ## Assignment Reflection
 I found this assignment to be very enjoyable and think it would be great as an official assignment for the course: it is simple yet informative enough to introduce students to basic database principles. One simple modification could be a delete() function to remove entries from the database. A more advanced modification might be expanding value support from just integers to all sorts of values (e.g. strings, decimals, ints, etc.) and introducing some sort of type specifications, to add more considerations for the student. For grading, one way to simplify the assignment might be more strict requirements (e.g., you must implement in C++, and the class must be named X, etc.) - then, tests could be written, which might expedite the grading process and also allow students to familiarize themselves with testing situations. At the same time, this does restrict freedom of implementation, which might introduce some downsides. 
